@@ -1,0 +1,21 @@
+{
+  "name": "thelo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "setup": "rm -f the-au-lait.sqlite the-au-lait.sqlite-shm the-au-lait.sqlite-wal && sqlite3 the-au-lait.sqlite < setup.sql",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^5.4.0",
+    "discord.js": "^11.4.2",
+    "dotenv": "^7.0.0",
+    "node-gyp": "^3.8.0"
+  },
+  "engines": {
+    "node": "11.x",
+    "yarn": "1.x"
+  }
+}
